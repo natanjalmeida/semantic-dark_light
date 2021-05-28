@@ -1,0 +1,48 @@
+@type    : 'module';
+@element : 'dropdown';
+
+@import (multiple) '../../@{mode}.config';
+
+
+[data-theme="dark"] .ui.selection {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    &.dropdown {
+        background: lighten(@pageBackgroundDark, 2%);
+        color     : @textColorDark;
+
+        & .menu>.item {
+            border-top: 1px solid lighten(@pageBackgroundDark, 5%);
+        }
+
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+    }
+
+    &.active.dropdown:hover {
+        border-color: @selectionActiveHoverBorderColor;
+    }
+
+    &.visible.dropdown>.text:not(.default) {
+        color: @textColorDark;
+    }
+}
+
+[data-theme="dark"] .ui.dropdown .menu {
+    background: lighten(@pageBackgroundDark, 2%);
+
+    &>.item {
+        color: @textColorDark;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+    }
+}
+
+[data-theme="dark"] .ui.dropdown.selected,
+[data-theme="dark"] .ui.dropdown .menu .selected.item {
+    background-color: rgba(255, 255, 255, 0.08);
+    color           : lighten(@textColorDark, 5%);
+}

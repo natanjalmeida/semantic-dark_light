@@ -1,0 +1,51 @@
+[data-theme="dark"] .ui.button {
+    background: #555 none;
+    color     : rgba(255, 255, 255, .7);
+
+    &:hover {
+        background: lighten(#666, 5%) none;
+        color     : rgba(255, 255, 255, .8);
+    }
+}
+
+
+[data-theme="dark"] .ui.basic.button {
+    box-shadow: 0 0 0 1px #555 inset !important;
+    color     : #999 !important;
+
+    &:hover {
+        background: none !important;
+        box-shadow: 0 0 0 1px #777 inset !important;
+        color     : #aaa !important;
+    }
+}
+
+each(@colors, {
+        @color: ~"@{value}";
+
+        [data-theme="dark"] .ui.@{value}.buttons .button,
+        [data-theme="dark"] .ui.@{value}.button {
+            background: darken(@@color, 15%);
+            color     : lighten(@@color, 40%);
+
+            &:hover {
+                background: darken(@@color, 10%);
+                color     : lighten(@@color, 70%);
+            }
+        }
+
+        [data-theme="dark"] .ui.basic.@{value}.buttons .button,
+        [data-theme="dark"] .ui.basic.@{value}.button {
+            box-shadow: 0 0 0 1px @@color inset !important;
+            color     : @@color  !important;
+
+            &:hover {
+                box-shadow: 0 0 0 1px lighten(@@color, 10%) inset !important;
+                color     : lighten(@@color, 10%) !important;
+            }
+
+        }
+
+    }
+
+);

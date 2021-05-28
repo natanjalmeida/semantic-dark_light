@@ -1,0 +1,32 @@
+[data-theme="dark"] .ui.form .field {
+    >label {
+        color: @textColorDark;
+    }
+}
+
+
+[data-theme="dark"] .ui.form input:not([type]),
+[data-theme="dark"] .ui.form input[type="date"],
+[data-theme="dark"] .ui.form input[type="datetime-local"],
+[data-theme="dark"] .ui.form input[type="email"],
+[data-theme="dark"] .ui.form input[type="number"],
+[data-theme="dark"] .ui.form input[type="password"],
+[data-theme="dark"] .ui.form input[type="search"],
+[data-theme="dark"] .ui.form input[type="tel"],
+[data-theme="dark"] .ui.form input[type="time"],
+[data-theme="dark"] .ui.form input[type="text"],
+[data-theme="dark"] .ui.form input[type="file"],
+[data-theme="dark"] .ui.form input[type="url"] {
+    background: lighten(@pageBackgroundDark, 2%);
+    border    : 1px solid rgba(255, 255, 255, 0.15);
+    color     : @textColorDark;
+
+    //   box-shadow: @inputBoxShadow;
+    :focus {
+        background     : @pageBackgroundDark  !important;
+        //   border: @inputBorder;
+        color          : @textColorDark  !important;
+        //   box-shadow: @inputBoxShadow;
+
+    }
+}

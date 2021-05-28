@@ -1,0 +1,26 @@
+{
+  "name": "semantic-ui_dark",
+  "version": "2.4.2",
+  "description": "Semantic-UI Light/Dark",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natanjalmeida/intranet5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natanjalmeida/intranet5/issues"
+  },
+  "homepage": "https://github.com/natanjalmeida/intranet5#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-strip-css-comments": "^2.0.0",
+    "semantic-ui": "^2.4.2"
+  }
+}

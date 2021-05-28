@@ -1,0 +1,96 @@
+@spacers: {
+    0: 0;
+    1: .5em;
+    2: 1em;
+    3: 1.5em;
+    4: 2em;
+    // 5: 1.25rem;
+    // 6: 1.5rem;
+}
+
+each(@spacers, {
+        .m {
+            &-@{key} {
+                margin: @value  !important;
+            }
+
+            &t- {
+                &@{key} {
+                    margin-top: @value  !important;
+                }
+            }
+
+            &b- {
+                &@{key} {
+                    margin-bottom: @value  !important;
+                }
+            }
+
+            &l- {
+                &@{key} {
+                    margin-left: @value  !important;
+                }
+            }
+            &r- {
+                &@{key} {
+                    margin-right: @value  !important;
+                }
+            }
+            &y- {
+                &@{key} {
+                    margin-right: @value  !important;
+                    margin-left: @value  !important;
+                }
+            }&x- {
+                &@{key} {
+                    margin-top: @value  !important;
+                    margin-bottom: @value  !important;
+                }
+            }
+
+            
+        }
+
+        .p {
+            &-@{key} {
+                padding: @value  !important;
+            }
+
+            &t- {
+                &@{key} {
+                    padding-top: @value  !important;
+                }
+            }
+
+            &b- {
+                &@{key} {
+                    padding-bottom: @value  !important;
+                }
+            }
+
+            &l- {
+                &@{key} {
+                    padding-left: @value  !important;
+                }
+            }
+
+            &r- {
+                &@{key} {
+                    padding-right: @value  !important;
+                }
+            }
+            &y- {
+                &@{key} {
+                    padding-right: @value  !important;
+                    padding-left: @value  !important;
+                }
+            }&x- {
+                &@{key} {
+                    padding-top: @value  !important;
+                    padding-bottom: @value  !important;
+                }
+            }
+        }
+    }
+
+)
