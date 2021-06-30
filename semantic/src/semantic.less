@@ -1,14 +1,4 @@
-/*
-
-███████╗███████╗███╗   ███╗ █████╗ ███╗   ██╗████████╗██╗ ██████╗    ██╗   ██╗██╗
-██╔════╝██╔════╝████╗ ████║██╔══██╗████╗  ██║╚══██╔══╝██║██╔════╝    ██║   ██║██║
-███████╗█████╗  ██╔████╔██║███████║██╔██╗ ██║   ██║   ██║██║         ██║   ██║██║
-╚════██║██╔══╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║   ██║   ██║██║         ██║   ██║██║
-███████║███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║   ██║   ██║╚██████╗    ╚██████╔╝██║
-╚══════╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝ ╚═════╝     ╚═════╝ ╚═╝
-
-  Import this file into your LESS project to use Semantic UI without build tools
-*/
+@mode: 'theme';
 
 /* Variables */
 @import "definitions/variables";
@@ -16,40 +6,32 @@
 /* Global */
 & { @import "definitions/globals/reset"; }
 & { @import "definitions/globals/site"; }
-& { @import "definitions/globals/site_dark"; }
 
 /* Elements */
 & { @import "definitions/elements/button"; }
-& { @import "definitions/elements/button_dark"; }
 & { @import "definitions/elements/container"; }
 & { @import "definitions/elements/divider"; }
 & { @import "definitions/elements/flag"; }
 & { @import "definitions/elements/header"; }
-& { @import "definitions/elements/header_dark"; }
 & { @import "definitions/elements/icon"; }
 & { @import "definitions/elements/image"; }
 & { @import "definitions/elements/input"; }
 & { @import "definitions/elements/label"; }
-& { @import "definitions/elements/label_dark"; }
 & { @import "definitions/elements/list"; }
 & { @import "definitions/elements/loader"; }
 & { @import "definitions/elements/placeholder"; }
 & { @import "definitions/elements/rail"; }
 & { @import "definitions/elements/reveal"; }
 & { @import "definitions/elements/segment"; }
-& { @import "definitions/elements/segment_dark"; }
 & { @import "definitions/elements/step"; }
 
 /* Collections */
 & { @import "definitions/collections/breadcrumb"; }
 & { @import "definitions/collections/form"; }
-& { @import "definitions/collections/form_dark"; }
 & { @import "definitions/collections/grid"; }
 & { @import "definitions/collections/menu"; }
-& { @import "definitions/collections/menu_dark"; }
 & { @import "definitions/collections/message"; }
 & { @import "definitions/collections/table"; }
-& { @import "definitions/collections/table_dark"; }
 & { @import "definitions/collections/spacing"; }
 
 /* Views */
@@ -62,12 +44,9 @@
 
 /* Modules */
 & { @import "definitions/modules/accordion"; }
-& { @import "definitions/modules/accordion_dark"; }
 & { @import "definitions/modules/checkbox"; }
-& { @import "definitions/modules/checkbox_dark"; }
 & { @import "definitions/modules/dimmer"; }
 & { @import "definitions/modules/dropdown"; }
-& { @import "definitions/modules/dropdown_dark"; }
 & { @import "definitions/modules/embed"; }
 & { @import "definitions/modules/modal"; }
 & { @import "definitions/modules/nag"; }
@@ -77,7 +56,6 @@
 & { @import "definitions/modules/search"; }
 & { @import "definitions/modules/shape"; }
 & { @import "definitions/modules/sidebar"; }
-& { @import "definitions/modules/sidebar_dark"; }
 & { @import "definitions/modules/sticky"; }
 & { @import "definitions/modules/tab"; }
 & { @import "definitions/modules/transition"; }

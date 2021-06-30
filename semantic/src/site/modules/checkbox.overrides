@@ -1,3 +1,34 @@
 /*******************************
          Site Overrides
 *******************************/
+[data-theme="dark"] .ui.toggle.checkbox .box,
+[data-theme="dark"] .ui.toggle.checkbox label {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-theme="dark"] .ui.toggle.checkbox input:checked ~ .box,
+[data-theme="dark"] .ui.toggle.checkbox input:checked ~ label {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-theme="dark"] .ui.toggle.checkbox .box:before,
+[data-theme="dark"] .ui.toggle.checkbox label:before {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="dark"] .ui.toggle.checkbox .box:after,
+[data-theme="dark"] .ui.toggle.checkbox label:after {
+    background: #ccc;
+}
+
+[data-theme="dark"] .ui.toggle.checkbox input:focus ~ .box:before,
+[data-theme="dark"] .ui.toggle.checkbox input:focus ~ label:before,
+[data-theme="dark"] .ui.toggle.checkbox label:focus::before {
+    background: lighten(#666, 10%);
+}
+
+[data-theme="dark"] .ui.toggle.checkbox input:hover ~ .box:before,
+[data-theme="dark"] .ui.toggle.checkbox input:hover ~ label:before,
+[data-theme="dark"] .ui.toggle.checkbox label:hover::before {
+    background: lighten(#666, 10%);
+}

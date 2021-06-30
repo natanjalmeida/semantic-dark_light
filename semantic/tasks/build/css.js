@@ -69,7 +69,7 @@ module.exports = function (callback) {
   }
 
   // unified css stream
-  stream = gulp.src(source.modes + '/*.less')
+  stream = gulp.src(source.src + '/semantic.less')
     // .pipe(plumber(settings.plumber.less))
     // .pipe(sourcemaps.init())
     .pipe(less(settings.less))

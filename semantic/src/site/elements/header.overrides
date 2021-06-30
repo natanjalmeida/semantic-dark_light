@@ -1,3 +1,6 @@
 /*******************************
          Site Overrides
 *******************************/
+[data-theme="dark"] .ui .header {
+    color: @textColorDark !important;
+}

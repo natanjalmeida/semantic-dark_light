@@ -143,7 +143,7 @@ module.exports = {
       roundingPrecision   : -1,
     },
 
-    compressed: false,
+    compressed: true,
 
     /* Minified JS Settings */
     uglify: {

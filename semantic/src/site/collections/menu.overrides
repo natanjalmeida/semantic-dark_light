@@ -1,3 +1,19 @@
 /*******************************
          Site Overrides
 *******************************/
+[data-theme="dark"] .ui.menu .item {
+    color: @textColorDark;
+}
+
+[data-theme="dark"] .ui.vertical.menu {
+    background: lighten(@pageBackgroundDark, 5%);
+
+    & .item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+        &:hover {
+            color: darken(@textColorDark, 5%);
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
